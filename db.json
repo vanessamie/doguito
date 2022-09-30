@@ -1,0 +1,24 @@
+{
+  "profile": [
+    {
+      "nome": "Anne Kaori",
+      "email": "annekln@gmail.com",
+      "id": 3
+    },
+    {
+      "nome": "Vanessa",
+      "email": "n.vanessamie@gmail.com",
+      "id": 4
+    },
+    {
+      "nome": "Liam",
+      "email": "liamkenjiln@gmail.com",
+      "id": 5
+    },
+    {
+      "nome": "Raphael",
+      "email": "raphaelveter@gmail.com",
+      "id": 6
+    }
+  ]
+}
