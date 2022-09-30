@@ -3,17 +3,6 @@
 JS na web: CRUD com JavaScript assíncrono
 JavaScript na Web: validação de Formulários e HTML5
 
-abrir a pasta admin no vscode e 
-rodar o json server: 
-```js
- npx json-server --watch db.json
-```
-
-instalar
-npm install -g browser-sync
-
-Rodar: 
-browser-sync start --server --file . --host --port 5000 --startPath admin/telas/lista_cliente.html
 
 
 Fazer requisições utilizando XMLHttpRequest.
@@ -48,11 +37,14 @@ rodar o json server:
 ```
 
 instalar
+```js
 npm install -g browser-sync
+```
 
 Rodar: 
+```js
 browser-sync start --server --file . --host --port 5000 --startPath admin/telas/lista_cliente.html
-
+```
 
 
 
@@ -81,5 +73,7 @@ Veja também a Regex Engine que utilizei e os regex que desenvolvi durante o cur
 https://github.com/vanessamie/regex
 
 
-
-pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$" title="A senha deve conter de 6 a 12 caracteres, pelo menos 1 letra maiúscula e 1 número e não deve conter símbolos"
+title="A senha deve conter de 6 a 12 caracteres, pelo menos 1 letra maiúscula e 1 número e não deve conter símbolos"
+```js
+pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$" 
+```
