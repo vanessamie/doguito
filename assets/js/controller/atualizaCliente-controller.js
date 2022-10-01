@@ -15,7 +15,7 @@ import { clienteService } from "../services/cliente-service.js"
     }
     catch(erro){
         console.error(erro)
-        window.location.href = '../erro.html'
+        window.location.href = './erro.html'
     }
         
         const formulario = document.querySelector('[data-form]')
@@ -24,11 +24,11 @@ import { clienteService } from "../services/cliente-service.js"
             evento.preventDefault()
             try {
                 await clienteService.atualizaCliente(id, inputNome.value, inputEmail.value)
-                window.location.href = '../edicao_concluida.html'
+                window.location.href = './edicao_concluida.html'
             }
             catch(erro){
                 console.error(erro)
-                window.location.href = '../erro.html'
+                window.location.href = './erro.html'
             }
         })
 })()
