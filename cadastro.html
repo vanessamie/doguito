@@ -36,17 +36,17 @@
                 <fieldset>
                     <legend class="formulario__legenda">Informações básicas</legend>
                     <div class="input-container">
-                        <input name="nome" id="nome" class="input" type="text" placeholder="Nome" required>
+                        <input name="nome" id="nome" class="input" type="text" placeholder="Nome" data-tipo="nome" required>
                         <label class="input-label" for="nome">Nome</label>
                         <span class="input-mensagem-erro">Este campo não está válido</span>
                     </div>
                     <div class="input-container">
-                        <input name="email" id="email" class="input" type="email" placeholder="Email" required>
+                        <input name="email" id="email" class="input" type="email" placeholder="Email" data-tipo="email" required>
                         <label class="input-label" for="email">Email</label>
                         <span class="input-mensagem-erro">Este campo não está válido</span>
                     </div>
                     <div class="input-container">
-                        <input name="senha" id="senha" class="input" type="password" placeholder="Senha" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$" title="A senha deve conter de 6 a 12 caracteres, pelo menos 1 letra maiúscula e 1 número e não deve conter símbolos" required>
+                        <input name="senha" id="senha" class="input" type="password" placeholder="Senha" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$" title="" data-tipo="senha" required>
                         <label class="input-label" for="senha">Senha</label>
                         <span class="input-mensagem-erro">Este campo não está válido</span>
                     </div>
@@ -91,6 +91,6 @@
             </form>
         </section>
     </main>
-    <script src="./assets/js/validate/validaCliente.js"></script>
+    <script type="module" src="./assets/js/validate/app.js"></script>
 </body>
 </html>
