@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doguito Petshop | Cadastro de produto</title>
+    <title>Doguito Petshop | Cadastro de cliente</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./assets/css/base/base.css">
@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="./assets/css/cadastra_cliente.css">
     <link rel="stylesheet" href="./assets/css/componentes/inputs.css">
     <link rel="stylesheet" href="./assets/css/componentes/botao.css">
-    <link rel="stylesheet" href="./assets/css/cadastro_produto.css">
 </head>
 <body>
     <header class="cabecalho container">
@@ -21,34 +20,33 @@
             <ul class="cabecalho__lista-navegacao">
                 <li class="cabecalho__link"><a href="#">Dashboard</a></li>
                 <li class="cabecalho__link"><a href="#">Produtos</a></li>
-                <li class="cabecalho__link"><a href="../telas/lista_cliente.html">Clientes</a></li>
+                <li class="cabecalho__link"><a href="./lista_cliente.html">Clientes</a></li>
                 <li class="cabecalho__link"><a href="#">Pets</a></li>
-                <li class="cabecalho__link"><a href="../telas/cadastro.html">Cadastrar</a></li>
+                <li class="cabecalho__link"><a href="./cadastro.html">Cadastrar</a></li>
             </ul>
         </nav>
     </header>
     <main class="container flex flex--centro flex--coluna">
         <section class="cartao cadastro">
-            <h1 class="cartao__titulo">Cadastrar um produto</h1>
-            <form action="./cadastro_produto_concluido.html" class="flex flex--coluna">
+            <h1 class="cartao__titulo">Novo Cliente</h1>
+            <form class="flex flex--coluna" data-form>
                 <div class="input-container">
-                    <input name="nome" id="nome" class="input" type="text" placeholder="Nome">
+                    <input name="nome" id="nome" class="input" type="text" placeholder="Nome" required data-nome>
                     <label class="input-label" for="nome">Nome</label>
-                    <span class="input-mensagem-erro">Este campo não está válido</span>
+                    <span class="input-mensagem-erro">Esse campo não pode estar vazio</span>
                 </div>
-                <div class="input-container cadastro__preco-container">
-                    <input name="preco" id="preco" class="input" type="text" placeholder="Preço">
-                    <label class="input-label" for="preco">Preço</label>
-                    <span class="input-mensagem-erro">Este campo não está válido</span>
+                <div class="input-container">
+                    <input name="email" id="email" class="input" type="text" placeholder="email" required data-email>
+                    <label class="input-label" for="email" >email</label>
+                    <span class="input-mensagem-erro">Esse campo não pode estar vazio</span>
                 </div>
-                <div class="textarea-container textarea-container--invalido cadastro__descricao-container">
-                    <textarea class="textarea cadastro__descricao" name="descricao" id="descricao" placeholder="Descrição"></textarea>
-                    <label class="textarea-label" for="descricao">Descrição</label>
-                    <span class="textarea-mensagem-erro">Este campo não está válido</span>
-                </div>
-                <a href="./cadastro_concluido.html" class="botao">Cadastrar produto</a>
+                <button type="submit"class="botao">
+                Cadastrar
+            </button>
             </form>
         </section>
     </main>
+    <script type="module" src="./assets/js/controller/cadastraCliente-controller.js"></script>
 </body>
+
 </html>

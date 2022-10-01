@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,17 +20,21 @@
             <ul class="cabecalho__lista-navegacao">
                 <li class="cabecalho__link"><a href="#">Dashboard</a></li>
                 <li class="cabecalho__link"><a href="#">Produtos</a></li>
-                <li class="cabecalho__link"><a href="../telas/lista_cliente.html">Clientes</a></li>
+                <li class="cabecalho__link"><a href="./lista_cliente.html">Clientes</a></li>
                 <li class="cabecalho__link"><a href="#">Pets</a></li>
-                <li class="cabecalho__link"><a href="../telas/cadastro.html">Cadastrar</a></li>
+                <li class="cabecalho__link"><a href="./cadastro.html">Cadastrar</a></li>
             </ul>
         </nav>
     </header>
     <main class="container flex flex--coluna flex--centro">
+        <div class="cadastro-cabecalho">
+            <img src="./assets/img/doguito.svg" alt="Logo Doguito" class="cadastro-cabecalho__logo">
+            <h1 class="cadastro-cabecalho__titulo">PetShop</h1>
+        </div>
         <section class="cadastro-cartao cartao">
             <span class="cadastro-cartao__icone-concluido"></span>
-            <h1 class="cadastro-cartao__titulo cartao__titulo">Cadastro de produto realizado com sucesso!</h1>
-            <a href="./cadastro_produto.html" class="botao">Cadastrar outro produto</a>
+            <h1 class="cadastro-cartao__titulo cartao__titulo">Conta Cadastrada com sucesso!</h1>
+            <a href="./lista_cliente.html" class="botao">Voltar para Clientes</a>
         </section>
     </main>
 </body>
